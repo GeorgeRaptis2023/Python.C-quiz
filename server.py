@@ -16,7 +16,7 @@ def load_quiz():
     code = False
     replies = {}
     question = ""
-    for line in open(os.path.join("C:/Users/argra/Desktop/Flet/Final", "questions.txt"), "r", encoding="utf-8"):
+    for line in open(os.path.join("", "questions.txt"), "r", encoding="utf-8"):
         if not line.strip(): continue
         if line.startswith("Q") or line.startswith("T"): 
             if id: Quiz(id, question, replies, correct)
