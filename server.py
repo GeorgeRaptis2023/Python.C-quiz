@@ -107,5 +107,7 @@ def end():
 def newgame():
     print("Starting new game\nsession is ",session)
     return json.jsonify([show_question(q) for q in draw_questions()])
-with app.app_context():db.create_all()
-app.run()
+
+if __name__=="__main__":
+    with app.app_context():db.create_all()
+    app.run()
