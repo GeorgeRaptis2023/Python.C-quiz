@@ -1,7 +1,7 @@
 import flet as ft
 import requests
 session = requests.Session()
-server = "http://127.0.0.1:5000/"  # Update with the actual server URL
+server = "https://graptis.pythonanywhere.com/" # Update with the actual server URL
 
 class LoginPage(ft.UserControl):
     def __init__(self, controller):
